@@ -17,7 +17,7 @@ async function Youtube() {
     return ( 
         <div>
             {data.map((ch)=>{
-                return <p>{ch.name}</p>
+                return <p key={ch.name}>{ch.name}</p>
             })}
         </div>
      );
